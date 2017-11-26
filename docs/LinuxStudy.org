@@ -1,0 +1,240 @@
+* Linux Kernel Overview
+- Process scheduler
+- Memory Manager
+- I/O Schedule
+- IPC
+- Network Services
+- File Systme IO=>Device Driver=>Hardware/Peripherals
+- [[https://www.youtube.com/watch?v=-O6GsrmOUgY][LInux Kernel Programming-01-youtube]]
+** How to obtain Linux Kernel
+#+BEGIN_SRC sh
+apt-get install linux-source
+cd /usr/src
+#+END_SRC
+
+* How to Install Unity 3D on Linux
+** Get Unity    
+- [[https://forum.unity3d.com/threads/unity-on-linux-release-notes-and-known-issues.350256/][Forum.unity3d.com]]
+** Installation
+sudo dpkg -i unity-editor.deb 
+* gtags
+** How to Install GNU Global source code tagging system
+
+- Get GNU Flobal
+download link: [[https://www.gnu.org/software/global/][GNU GLobal]]
+** Install GNU Global
+This tutor [[https://github.com/yubaochina/Emacs-Cpp-IDE/blob/master/emacs-tutor/emacs-tutor.org#version-control][GnuGloabalInstallGuid]] introduced the method of installing GNU Global in Linux/Windows/Mac.
+
+   #+BEGIN_SRC sh
+   
+tar xvf global-<version>.tar.gz
+cd global-<version>/
+If you have ctags installed, add the option --with-exuberant-ctags and supply the installed path: ./configure [--with-exuberant-ctags=/usr/local/bin/ctags]
+make
+sudo make install
+#+END_SRC
+
+*** Common Questions  
+=======
+- Install GNU Global
+#+BEGIN_SRC sh
+#!/bin/sh
+ tar zxvf global-6.5.7.tar.gz
+ cd global-6.5.7
+ ./configure
+ make
+ sudo make install
+#+END_SRC
+** How to Use gtags
+#+BEGIN_SRC sh
+cd /path/to/prject/root
+gtags
+#+END_SRC
+
+- GTAGS: definition database
+- GRTAGS: reference database
+- GPATH: path name database
+  
+** Common Questions  
+- configure: error: curses library is required but not found.
+global-6.5.7$ sudo apt-get install libncurses5-dev 
+
+* Macro
+** offsetof
+#+BEGIN_SRC C
+#define offsetof(type, member) (size_t)&(((type*)0)->member)
+#+END_SRC
+
+offsetof (type,member)
+
+Return member offset
+
+This macro with functional form returns the offset value in bytes of member member in the data structure or union type type.
+
+Example:
+#+BEGIN_SRC C
+#include <stdio.h>
+#ifndef offsetof
+#define offsetof(TYPE,MEMBER)((size_t)&((TYPE*)0)->MEMBER)
+#endif
+struct ST
+{
+    int i;
+    char c;
+    int j;
+};
+
+void func (struct ST* pst)
+{
+    int* pi=&(pst->i); //(unsigned int)&s+0;
+    int* pj=&(pst->j); //(unsigned int)&s+4;
+    char* pc=&(pst->c);//(unsigned int)&s+8;
+
+    printf("pst = %p \n",pst);
+    printf("pi = %p \n",pi);
+    printf("pc = %p \n",pc);
+    printf("pj = %p \n",pj);
+}
+
+int main(int argc, char *argv[])
+{
+    struct ST s={0};
+    func(&s);
+    printf("--------\n");
+    func(NULL);
+    printf("--------\n");
+    printf("offset i: %d \n",offsetof(struct ST,i));
+    printf("offset c: %d \n",offsetof(struct ST,c));
+    printf("offset j: %d \n",offsetof(struct ST,j));
+    printf("Hello World!\n");
+    return 0;
+}
+#+END_SRC
+
+#+RESULTS:
+| pst      | =      | 0x7ffdeb42bdbc |
+| pi       | =      | 0x7ffdeb42bdbc |
+| pc       | =      | 0x7ffdeb42bdc0 |
+| pj       | =      | 0x7ffdeb42bdc4 |
+| -------- |        |                |
+| pst      | =      |          (nil) |
+| pi       | =      |          (nil) |
+| pc       | =      |            0x4 |
+| pj       | =      |            0x8 |
+| -------- |        |                |
+| offset   | i:     |              0 |
+| offset   | c:     |              4 |
+| offset   | j:     |              8 |
+| Hello    | World! |                |
+
+** container_of
+*** Defination
+#+BEGIN_SRC C
+#define container_of(ptr, type, member) ({ \
+     const typeof( ((type *)0)->member ) *__mptr = (ptr); \
+     (type *)( (char *)__mptr - offsetof(type,member) );})    
+#+END_SRC
+*** What's ({})?
+#+BEGIN_SRC c
+#include <stdio.h>
+#define offsetof(type, member) (size_t)&(((type*)0)->member)
+struct
+{
+    int i;
+    char c;
+    int j;
+};
+void comma_operator_common_C()
+{
+    int a=0;
+    int b=0;
+    int r=(
+            a=1,
+            b=2,
+            a+b
+            );
+    printf("r = %d \n",r);
+
+}
+void GNU_extended_C()
+{
+    int r=({
+            int a=1;
+            int b=2;
+            a+b;
+           });
+    printf("r = %d \n",r);
+}
+
+int main(int argc, char *argv[])
+{
+    printf("Hello World!\n");
+    comma_operator_common_C();
+    GNU_extended_C();
+    return 0;
+}
+#+END_SRC
+*** typeof()?
+Only working in compile phase.
+#+BEGIN_SRC C
+int i=100;
+typeof(i) j=i; //int j=i
+const typeof(i)* p=&j; //const int* p=&j;
+#+END_SRC
+#+BEGIN_SRC C :tangle typeof.c
+  #include <stdio.h>
+  void type_of()
+  {
+      int i=100;
+      typeof(i) j=i;
+      const typeof(j)* p=&j;
+
+      printf("sizeof(j) = %d \n",(int)sizeof(j));
+      printf("j = %d\n",j);
+      printf("p = %d \n", *p);
+  }
+  void main()
+  {
+    type_of();
+  }
+#+END_SRC
+
+#+RESULTS:
+| sizeof(j) | = |   4 |
+| j         | = | 100 |
+| p         | = | 100 |
+*** Example:
+#+BEGIN_SRC C
+
+#+END_SRC
+* Programming
+** File
+- System Call
+- C/CPP API
+#+BEGIN_SRC c
+       #include <sys/types.h>
+       #include <sys/stat.h>
+       #include <fcntl.h>
+
+       int open(const char *pathname, int flags);
+       int open(const char *pathname, int flags, mode_t mode);
+
+       int creat(const char *pathname, mode_t mode);
+       int close(int fd);
+       
+       ssize_t read(int fd, void *buf, size_t count);
+       ssize_t write(int fd, const void *buf, size_t count);
+
+#+END_SRC
+*** lseek
+#+BEGIN_SRC c
+       off_t lseek(int fd, off_t offset, int whence);
+#+END_SRC
+1. offset
+  - =SEEK_SET=
+  The file offset is set to offset bytes.
+  - =SEEK_CUR= 
+  The  file  offset  is  set  to  its current location plus offset bytes.
+  - =SEEK_END= 
+  The file offset is set to the  size  of  the  file  plus  offset bytes.
+
