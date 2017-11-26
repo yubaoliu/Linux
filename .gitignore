@@ -370,4 +370,4 @@ __pycache__/
 # End of https://www.gitignore.io/api/visualstudio
 build-container_of-Desktop-Default
 build-offsetof-Desktop-Default
-
+build-*

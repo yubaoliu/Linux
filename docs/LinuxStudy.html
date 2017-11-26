@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-11-25 Sat 09:12 -->
+<!-- 2017-11-27 Mon 06:23 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -233,39 +233,48 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgf252486">1. Linux Kernel Overview</a>
+<li><a href="#org4f9ec98">1. Linux Kernel Overview</a>
 <ul>
-<li><a href="#orgee98a43">1.1. How to obtain Linux Kernel</a></li>
+<li><a href="#orge68d5ac">1.1. How to obtain Linux Kernel</a></li>
 </ul>
 </li>
-<li><a href="#org274dd7d">2. How to Install Unity 3D on Linux</a>
+<li><a href="#org087f5f2">2. How to Install Unity 3D on Linux</a>
 <ul>
-<li><a href="#org888c45e">2.1. Get Unity</a></li>
-<li><a href="#org72adeef">2.2. Installation</a></li>
+<li><a href="#orgb94db6e">2.1. Get Unity</a></li>
+<li><a href="#org21b5816">2.2. Installation</a></li>
 </ul>
 </li>
-<li><a href="#orgf206b54">3. gtags</a>
+<li><a href="#org68a2a00">3. gtags</a>
 <ul>
-<li><a href="#org3279460">3.1. How to Install GNU Global source code tagging system</a></li>
-<li><a href="#org49f3c87">3.2. Install GNU Global</a>
+<li><a href="#org6ec7936">3.1. How to Install GNU Global source code tagging system</a></li>
+<li><a href="#orgb60e5d0">3.2. Install GNU Global</a>
 <ul>
-<li><a href="#org6131ea1">3.2.1. Common Questions</a></li>
+<li><a href="#orgc7730b9">3.2.1. Common Questions</a></li>
 </ul>
 </li>
-<li><a href="#org2657219">3.3. How to Use gtags</a></li>
-<li><a href="#orgb6c6816">3.4. Common Questions</a></li>
+<li><a href="#org6437da1">3.3. How to Use gtags</a></li>
+<li><a href="#org786cd72">3.4. Common Questions</a></li>
 </ul>
 </li>
-<li><a href="#org5d620bb">4. Macro</a>
+<li><a href="#org7293bf8">4. Macro</a>
 <ul>
-<li><a href="#org0243134">4.1. offsetof</a></li>
+<li><a href="#org84d1fed">4.1. offsetof</a></li>
+<li><a href="#org9b281e1">4.2. container<sub>of</sub></a>
+<ul>
+<li><a href="#org1d437f1">4.2.1. Defination</a></li>
+<li><a href="#org5c131b6">4.2.2. What's ({})?</a></li>
+<li><a href="#org5337c80">4.2.3. typeof()?</a></li>
+<li><a href="#org581cca0">4.2.4. Example:</a></li>
+<li><a href="#org36265e6">4.2.5. Question</a></li>
 </ul>
 </li>
-<li><a href="#org304bfa8">5. Programming</a>
+</ul>
+</li>
+<li><a href="#org14f483b">5. Programming</a>
 <ul>
-<li><a href="#org54c78c3">5.1. File</a>
+<li><a href="#orgea2b61b">5.1. File</a>
 <ul>
-<li><a href="#orge9e9583">5.1.1. lseek</a></li>
+<li><a href="#org2878768">5.1.1. lseek</a></li>
 </ul>
 </li>
 </ul>
@@ -273,8 +282,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf252486" class="outline-2">
-<h2 id="orgf252486"><span class="section-number-2">1</span> Linux Kernel Overview</h2>
+<div id="outline-container-org4f9ec98" class="outline-2">
+<h2 id="org4f9ec98"><span class="section-number-2">1</span> Linux Kernel Overview</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Process scheduler</li>
@@ -286,8 +295,8 @@ for the JavaScript code in this tag.
 <li><a href="https://www.youtube.com/watch?v=-O6GsrmOUgY">LInux Kernel Programming-01-youtube</a></li>
 </ul>
 </div>
-<div id="outline-container-orgee98a43" class="outline-3">
-<h3 id="orgee98a43"><span class="section-number-3">1.1</span> How to obtain Linux Kernel</h3>
+<div id="outline-container-orge68d5ac" class="outline-3">
+<h3 id="orge68d5ac"><span class="section-number-3">1.1</span> How to obtain Linux Kernel</h3>
 <div class="outline-text-3" id="text-1-1">
 <div class="org-src-container">
 <pre class="src src-sh">apt-get install linux-source
@@ -298,20 +307,20 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org274dd7d" class="outline-2">
-<h2 id="org274dd7d"><span class="section-number-2">2</span> How to Install Unity 3D on Linux</h2>
+<div id="outline-container-org087f5f2" class="outline-2">
+<h2 id="org087f5f2"><span class="section-number-2">2</span> How to Install Unity 3D on Linux</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org888c45e" class="outline-3">
-<h3 id="org888c45e"><span class="section-number-3">2.1</span> Get Unity</h3>
+<div id="outline-container-orgb94db6e" class="outline-3">
+<h3 id="orgb94db6e"><span class="section-number-3">2.1</span> Get Unity</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li><a href="https://forum.unity3d.com/threads/unity-on-linux-release-notes-and-known-issues.350256/">Forum.unity3d.com</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org72adeef" class="outline-3">
-<h3 id="org72adeef"><span class="section-number-3">2.2</span> Installation</h3>
+<div id="outline-container-org21b5816" class="outline-3">
+<h3 id="org21b5816"><span class="section-number-3">2.2</span> Installation</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 sudo dpkg -i unity-editor.deb 
@@ -319,12 +328,12 @@ sudo dpkg -i unity-editor.deb
 </div>
 </div>
 </div>
-<div id="outline-container-orgf206b54" class="outline-2">
-<h2 id="orgf206b54"><span class="section-number-2">3</span> gtags</h2>
+<div id="outline-container-org68a2a00" class="outline-2">
+<h2 id="org68a2a00"><span class="section-number-2">3</span> gtags</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org3279460" class="outline-3">
-<h3 id="org3279460"><span class="section-number-3">3.1</span> How to Install GNU Global source code tagging system</h3>
+<div id="outline-container-org6ec7936" class="outline-3">
+<h3 id="org6ec7936"><span class="section-number-3">3.1</span> How to Install GNU Global source code tagging system</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Get GNU Flobal</li>
@@ -334,8 +343,8 @@ download link: <a href="https://www.gnu.org/software/global/">GNU GLobal</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org49f3c87" class="outline-3">
-<h3 id="org49f3c87"><span class="section-number-3">3.2</span> Install GNU Global</h3>
+<div id="outline-container-orgb60e5d0" class="outline-3">
+<h3 id="orgb60e5d0"><span class="section-number-3">3.2</span> Install GNU Global</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 This tutor <a href="https://github.com/yubaochina/Emacs-Cpp-IDE/blob/master/emacs-tutor/emacs-tutor.org#version-control">GnuGloabalInstallGuid</a> introduced the method of installing GNU Global in Linux/Windows/Mac.
@@ -351,8 +360,8 @@ sudo make install
 </div>
 </div>
 
-<div id="outline-container-org6131ea1" class="outline-4">
-<h4 id="org6131ea1"><span class="section-number-4">3.2.1</span> Common Questions</h4>
+<div id="outline-container-orgc7730b9" class="outline-4">
+<h4 id="orgc7730b9"><span class="section-number-4">3.2.1</span> Common Questions</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <p>
 <code>=====</code>
@@ -372,8 +381,8 @@ sudo make install
 </div>
 </div>
 </div>
-<div id="outline-container-org2657219" class="outline-3">
-<h3 id="org2657219"><span class="section-number-3">3.3</span> How to Use gtags</h3>
+<div id="outline-container-org6437da1" class="outline-3">
+<h3 id="org6437da1"><span class="section-number-3">3.3</span> How to Use gtags</h3>
 <div class="outline-text-3" id="text-3-3">
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #4f97d7;">cd</span> /path/to/prject/root
@@ -389,8 +398,8 @@ gtags
 </div>
 </div>
 
-<div id="outline-container-orgb6c6816" class="outline-3">
-<h3 id="orgb6c6816"><span class="section-number-3">3.4</span> Common Questions</h3>
+<div id="outline-container-org786cd72" class="outline-3">
+<h3 id="org786cd72"><span class="section-number-3">3.4</span> Common Questions</h3>
 <div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>configure: error: curses library is required but not found.</li>
@@ -402,22 +411,30 @@ global-6.5.7$ sudo apt-get install libncurses5-dev
 </div>
 </div>
 
-<div id="outline-container-org5d620bb" class="outline-2">
-<h2 id="org5d620bb"><span class="section-number-2">4</span> Macro</h2>
+<div id="outline-container-org7293bf8" class="outline-2">
+<h2 id="org7293bf8"><span class="section-number-2">4</span> Macro</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org0243134" class="outline-3">
-<h3 id="org0243134"><span class="section-number-3">4.1</span> offsetof</h3>
+<div id="outline-container-org84d1fed" class="outline-3">
+<h3 id="org84d1fed"><span class="section-number-3">4.1</span> offsetof</h3>
 <div class="outline-text-3" id="text-4-1">
 <div class="org-src-container">
 <pre class="src src-C"><span style="color: #bc6ec5;">#define</span> <span style="color: #bc6ec5; font-weight: bold;">offsetof</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">type</span>, <span style="color: #7590db;">member</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">(</span>size_t<span style="color: #4f97d7;">)</span>&amp;<span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #2d9574;">)</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>-&gt;member<span style="color: #4f97d7;">)</span>
-
-<span style="color: #2aa1ae; background-color: #292e34;">/*</span><span style="color: #2aa1ae; background-color: #292e34;">offsetof (type,member)</span>
-<span style="color: #2aa1ae; background-color: #292e34;">Return member offset</span>
-<span style="color: #2aa1ae; background-color: #292e34;">This macro with functional form returns the offset value in bytes of member member in the data structure or union type type.</span>
-<span style="color: #2aa1ae; background-color: #292e34;">*/</span>
 </pre>
 </div>
+
+<p>
+offsetof (type,member)
+</p>
+
+<p>
+Return member offset
+</p>
+
+<p>
+This macro with functional form returns the offset value in bytes of member member in the data structure or union type type.
+</p>
+
 <p>
 Example:
 </p>
@@ -462,14 +479,240 @@ Example:
 </div>
 </div>
 </div>
+
+<div id="outline-container-org9b281e1" class="outline-3">
+<h3 id="org9b281e1"><span class="section-number-3">4.2</span> container<sub>of</sub></h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org1d437f1" class="outline-4">
+<h4 id="org1d437f1"><span class="section-number-4">4.2.1</span> Defination</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #bc6ec5;">#define</span> <span style="color: #bc6ec5; font-weight: bold;">container_of</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">ptr</span>, <span style="color: #7590db;">type</span>, <span style="color: #7590db;">member</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">{</span> \
+     <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #2d9574;">(</span> <span style="color: #67b11d;">(</span><span style="color: #b1951d;">(</span><span style="color: #ce537a; font-weight: bold;">type</span> *<span style="color: #b1951d;">)</span><span style="color: #a45bad;">0</span><span style="color: #67b11d;">)</span>-&gt;member <span style="color: #2d9574;">)</span> *<span style="color: #7590db;">__mptr</span> = <span style="color: #2d9574;">(</span>ptr<span style="color: #2d9574;">)</span>; \
+     <span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span> *<span style="color: #2d9574;">)(</span> <span style="color: #67b11d;">(</span><span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #67b11d;">)</span>__mptr - offsetof<span style="color: #67b11d;">(</span>type,member<span style="color: #67b11d;">)</span> <span style="color: #2d9574;">)</span>;<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)</span>    
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5c131b6" class="outline-4">
+<h4 id="org5c131b6"><span class="section-number-4">4.2.2</span> What's ({})?</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #bc6ec5; font-weight: bold;">offsetof</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">type</span>, <span style="color: #7590db;">member</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">(</span>size_t<span style="color: #4f97d7;">)</span>&amp;<span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #2d9574;">)</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>-&gt;member<span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7; font-weight: bold;">struct</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span>;
+    <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">c</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">j</span>;
+<span style="color: #4f97d7;">}</span>;
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">comma_operator_common_C</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">a</span>=<span style="color: #a45bad;">0</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">b</span>=<span style="color: #a45bad;">0</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">r</span>=<span style="color: #bc6ec5;">(</span>
+            a=<span style="color: #a45bad;">1</span>,
+            b=<span style="color: #a45bad;">2</span>,
+            a+b
+            <span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"r = %d \n"</span>,r<span style="color: #bc6ec5;">)</span>;
+
+<span style="color: #4f97d7;">}</span>
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">GNU_extended_C</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">r</span>=<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">{</span>
+            <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">a</span>=<span style="color: #a45bad;">1</span>;
+            <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">b</span>=<span style="color: #a45bad;">2</span>;
+            a+b;
+           <span style="color: #2d9574;">}</span><span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"r = %d \n"</span>,r<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">argc</span>, <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">argv</span><span style="color: #bc6ec5;">[]</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">{</span>
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Hello World!\n"</span><span style="color: #bc6ec5;">)</span>;
+    comma_operator_common_C<span style="color: #bc6ec5;">()</span>;
+    GNU_extended_C<span style="color: #bc6ec5;">()</span>;
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">0</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5337c80" class="outline-4">
+<h4 id="org5337c80"><span class="section-number-4">4.2.3</span> typeof()?</h4>
+<div class="outline-text-4" id="text-4-2-3">
+<p>
+Only working in compile phase.
+</p>
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span>=<span style="color: #a45bad;">100</span>;
+<span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #4f97d7;">(</span>i<span style="color: #4f97d7;">)</span> <span style="color: #7590db;">j</span>=i; <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">int j=i</span>
+<span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #4f97d7;">(</span>i<span style="color: #4f97d7;">)</span>* <span style="color: #7590db;">p</span>=&amp;j; <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">const int* p=&amp;j;</span>
+</pre>
+</div>
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">type_of</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span>=<span style="color: #a45bad;">100</span>;
+    <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #bc6ec5;">(</span>i<span style="color: #bc6ec5;">)</span> <span style="color: #7590db;">j</span>=i;
+    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #bc6ec5;">(</span>j<span style="color: #bc6ec5;">)</span>* <span style="color: #7590db;">p</span>=&amp;j;
+
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"sizeof(j) = %d \n"</span>,<span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">int</span><span style="color: #2d9574;">)</span><span style="color: #4f97d7; font-weight: bold;">sizeof</span><span style="color: #2d9574;">(</span>j<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"j = %d\n"</span>,j<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"p = %d \n"</span>, *p<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+  type_of<span style="color: #bc6ec5;">()</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org581cca0" class="outline-4">
+<h4 id="org581cca0"><span class="section-number-4">4.2.4</span> Example:</h4>
+<div class="outline-text-4" id="text-4-2-4">
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #bc6ec5;">#include</span> <span style="color: #4f97d7;">&lt;</span><span style="color: #2d9574;">stdio.h</span><span style="color: #4f97d7;">&gt;</span>
+<span style="color: #bc6ec5;">#define</span> <span style="color: #bc6ec5; font-weight: bold;">offsetof</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">type</span>, <span style="color: #7590db;">member</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">(</span>size_t<span style="color: #4f97d7;">)</span>&amp;<span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #2d9574;">)</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>-&gt;member<span style="color: #4f97d7;">)</span>
+
+<span style="color: #bc6ec5;">#if</span><span style="color: #bc6ec5;">n</span><span style="color: #bc6ec5;">def</span> container_of
+<span style="color: #bc6ec5;">#define</span> <span style="color: #bc6ec5; font-weight: bold;">container_of</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">ptr</span>,<span style="color: #7590db;">type</span>,<span style="color: #7590db;">member</span><span style="color: #4f97d7;">)(</span><span style="color: #bc6ec5;">{</span>\
+    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #2d9574;">(</span><span style="color: #67b11d;">(</span><span style="color: #b1951d;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #b1951d;">)</span> <span style="color: #a45bad;">0</span><span style="color: #67b11d;">)</span>-&gt;member<span style="color: #2d9574;">)</span>* <span style="color: #7590db;">__mptr</span>=<span style="color: #2d9574;">(</span>ptr<span style="color: #2d9574;">)</span>;    \
+    <span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #2d9574;">)(</span><span style="color: #67b11d;">(</span><span style="color: #ce537a; font-weight: bold;">char</span>*<span style="color: #67b11d;">)</span>__mptr-offsetof<span style="color: #67b11d;">(</span>type,member<span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>;    \
+<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5;">#endif</span>
+
+<span style="color: #bc6ec5;">#if</span><span style="color: #bc6ec5;">n</span><span style="color: #bc6ec5;">def</span> container_of_simple
+<span style="color: #bc6ec5;">    #define</span> <span style="color: #bc6ec5; font-weight: bold;">container_of_simple</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">ptr</span>,<span style="color: #7590db;">type</span>,<span style="color: #7590db;">member</span><span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #bc6ec5;">)(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">char</span>*<span style="color: #2d9574;">)</span>ptr-offsetof<span style="color: #2d9574;">(</span>type,member<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5;">#endif</span>
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span>;
+    <span style="color: #ce537a; font-weight: bold;">char</span> <span style="color: #7590db;">c</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">j</span>;
+<span style="color: #4f97d7;">}</span>;
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">comma_operator_common_C</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">a</span>=<span style="color: #a45bad;">0</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">b</span>=<span style="color: #a45bad;">0</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">r</span>=<span style="color: #bc6ec5;">(</span>
+                a=<span style="color: #a45bad;">1</span>,
+                b=<span style="color: #a45bad;">2</span>,
+                a+b
+                <span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"r = %d \n"</span>,r<span style="color: #bc6ec5;">)</span>;
+
+<span style="color: #4f97d7;">}</span>
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">GNU_extended_C</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">r</span>=<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">{</span>
+               <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">a</span>=<span style="color: #a45bad;">1</span>;
+               <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">b</span>=<span style="color: #a45bad;">2</span>;
+               a+b;
+           <span style="color: #2d9574;">}</span><span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"r = %d \n"</span>,r<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+<span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">type_of</span><span style="color: #4f97d7;">()</span>
+<span style="color: #4f97d7;">{</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span>=<span style="color: #a45bad;">100</span>;
+    <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #bc6ec5;">(</span>i<span style="color: #bc6ec5;">)</span> <span style="color: #7590db;">j</span>=i;
+    <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #bc6ec5;">(</span>j<span style="color: #bc6ec5;">)</span>* <span style="color: #7590db;">p</span>=&amp;j;
+
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"sizeof(j) = %d \n"</span>,<span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">int</span><span style="color: #2d9574;">)</span><span style="color: #4f97d7; font-weight: bold;">sizeof</span><span style="color: #2d9574;">(</span>j<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"j = %d\n"</span>,j<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"p = %d \n"</span>, *p<span style="color: #bc6ec5;">)</span>;
+<span style="color: #4f97d7;">}</span>
+
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">argc</span>, <span style="color: #ce537a; font-weight: bold;">char</span> *<span style="color: #7590db;">argv</span><span style="color: #bc6ec5;">[]</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">{</span>
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"Hello World!\n"</span><span style="color: #bc6ec5;">)</span>;
+    comma_operator_common_C<span style="color: #bc6ec5;">()</span>;
+    GNU_extended_C<span style="color: #bc6ec5;">()</span>;
+    type_of<span style="color: #bc6ec5;">()</span>;
+
+    <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span> <span style="color: #7590db;">s</span>=<span style="color: #bc6ec5;">{</span><span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">}</span>;
+    <span style="color: #ce537a; font-weight: bold;">char</span>* <span style="color: #7590db;">pc</span>=&amp;s.c;
+    <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>* <span style="color: #7590db;">pst</span>=container_of<span style="color: #bc6ec5;">(</span>pc, <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>,c<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"&amp;s=%p\n"</span>,&amp;s<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"pst=%p\n"</span>,pst<span style="color: #bc6ec5;">)</span>;
+
+    <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>* <span style="color: #7590db;">pst_simple</span>=container_of_simple<span style="color: #bc6ec5;">(</span>pc,<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>,c<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"pst_simple=%p\n"</span>,pst_simple<span style="color: #bc6ec5;">)</span>;
+
+    <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">Datatype check (unsafe)</span>
+    <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">e</span>=<span style="color: #a45bad;">0</span>;
+    <span style="color: #ce537a; font-weight: bold;">int</span> *<span style="color: #7590db;">pe</span>=&amp;e;
+    <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>* <span style="color: #7590db;">pst_error</span>=container_of_simple<span style="color: #bc6ec5;">(</span>pe,<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>,c<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"pst_error=%p\n"</span>,pst_error<span style="color: #bc6ec5;">)</span>;
+
+    <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">compile warning</span>
+    <span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>* <span style="color: #7590db;">pst_error_report</span>=container_of<span style="color: #bc6ec5;">(</span>pe,<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>,c<span style="color: #bc6ec5;">)</span>;
+    printf<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"pst_error_report=%p\n"</span>,pst_error_report<span style="color: #bc6ec5;">)</span>;
+
+    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">0</span>;
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+</div>
 </div>
 
-<div id="outline-container-org304bfa8" class="outline-2">
-<h2 id="org304bfa8"><span class="section-number-2">5</span> Programming</h2>
+<div id="outline-container-org36265e6" class="outline-4">
+<h4 id="org36265e6"><span class="section-number-4">4.2.5</span> Question</h4>
+<div class="outline-text-4" id="text-4-2-5">
+<ol class="org-ol">
+<li>Why Linux Kernel doesn't define <code>container_of</code> like this:</li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #bc6ec5;">#if</span><span style="color: #bc6ec5;">n</span><span style="color: #bc6ec5;">def</span> container_of_simple
+<span style="color: #bc6ec5;">    #define</span> <span style="color: #bc6ec5; font-weight: bold;">container_of_simple</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">ptr</span>,<span style="color: #7590db;">type</span>,<span style="color: #7590db;">member</span><span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #bc6ec5;">)(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">char</span>*<span style="color: #2d9574;">)</span>ptr-offsetof<span style="color: #2d9574;">(</span>type,member<span style="color: #2d9574;">)</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+<span style="color: #bc6ec5;">#endif</span>
+</pre>
+</div>
+<p>
+We do a simple test:
+</p>
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">Datatype check (unsafe)</span>
+<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">e</span>=<span style="color: #a45bad;">0</span>;
+<span style="color: #ce537a; font-weight: bold;">int</span> *<span style="color: #7590db;">pe</span>=&amp;e;
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>* <span style="color: #7590db;">pst_error</span>=container_of_simple<span style="color: #4f97d7;">(</span>pe,<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>,c<span style="color: #4f97d7;">)</span>;
+printf<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"pst_error=%p\n"</span>,pst_error<span style="color: #4f97d7;">)</span>;
+
+<span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">compile warning</span>
+<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>* <span style="color: #7590db;">pst_error_report</span>=container_of<span style="color: #4f97d7;">(</span>pe,<span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">ST</span>,c<span style="color: #4f97d7;">)</span>;
+printf<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"pst_error_report=%p\n"</span>,pst_error_report<span style="color: #4f97d7;">)</span>;
+</pre>
+</div>
+<p>
+compile warning:
+</p>
+<div class="org-src-container">
+<pre class="src src-C">/home/yubao/MyProjects/Linux/source/Kernal/macro/container_of/main.c:<span style="color: #a45bad;">6</span>: warning: initialization from incompatible pointer type <span style="color: #4f97d7;">[</span>-Wincompatible-pointer-types<span style="color: #4f97d7;">]</span>
+     <span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #2d9574;">)</span> <span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>-&gt;member<span style="color: #4f97d7;">)</span>* __mptr=<span style="color: #4f97d7;">(</span>ptr<span style="color: #4f97d7;">)</span>;    \
+                                               ^
+</pre>
+</div>
+<div class="org-src-container">
+<pre class="src src-C"><span style="color: #4f97d7; font-weight: bold;">const</span> <span style="color: #4f97d7; font-weight: bold;">typeof</span><span style="color: #4f97d7;">(</span><span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">type</span>*<span style="color: #2d9574;">)</span> <span style="color: #a45bad;">0</span><span style="color: #bc6ec5;">)</span>-&gt;member<span style="color: #4f97d7;">)</span>* <span style="color: #7590db;">__mptr</span>=<span style="color: #4f97d7;">(</span>ptr<span style="color: #4f97d7;">)</span>;
+</pre>
+</div>
+<p>
+This was used to chek data type (safty check).
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org14f483b" class="outline-2">
+<h2 id="org14f483b"><span class="section-number-2">5</span> Programming</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org54c78c3" class="outline-3">
-<h3 id="org54c78c3"><span class="section-number-3">5.1</span> File</h3>
+<div id="outline-container-orgea2b61b" class="outline-3">
+<h3 id="orgea2b61b"><span class="section-number-3">5.1</span> File</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>System Call</li>
@@ -492,8 +735,8 @@ Example:
 </pre>
 </div>
 </div>
-<div id="outline-container-orge9e9583" class="outline-4">
-<h4 id="orge9e9583"><span class="section-number-4">5.1.1</span> lseek</h4>
+<div id="outline-container-org2878768" class="outline-4">
+<h4 id="org2878768"><span class="section-number-4">5.1.1</span> lseek</h4>
 <div class="outline-text-4" id="text-5-1-1">
 <div class="org-src-container">
 <pre class="src src-c"><span style="color: #ce537a; font-weight: bold;">off_t</span> <span style="color: #bc6ec5; font-weight: bold;">lseek</span><span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">fd</span>, <span style="color: #ce537a; font-weight: bold;">off_t</span> <span style="color: #7590db;">offset</span>, <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">whence</span><span style="color: #4f97d7;">)</span>;
@@ -529,7 +772,7 @@ The file offset is set to the  size  of  the  file  plus  offset bytes.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: yubao</p>
-<p class="date">Created: 2017-11-25 Sat 09:12</p>
+<p class="date">Created: 2017-11-27 Mon 06:23</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
