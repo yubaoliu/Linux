@@ -328,6 +328,25 @@ compile warning:
     const typeof(((type*) 0)->member)* __mptr=(ptr);
 #+END_SRC
 This was used to chek data type (safty check).
+* Link List
+#+BEGIN_SRC C
+struct list_head {
+        struct list_head *next, *prev;
+};
+
+static void INIT_LIST_HEAD(struct list_head *list)
+{
+        list->next= list;
+        list->prev = list;
+}
+#+END_SRC
+* GNU C
+** Platform Related files
+- ({})
+- typeof
+- _builtin_prefetch (gcc)
+- static inline
+
 * Programming
 ** File
 - System Call
