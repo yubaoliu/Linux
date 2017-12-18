@@ -35,11 +35,8 @@ struct hlist_node {
  * @member:	the name of the member within the struct.
  *
  */
-//#define container_of(ptr, type, member) ((type *)( (char *)ptr - offsetof(type,member)) )
+#define container_of(ptr, type, member) ((type *)( (char *)ptr - offsetof(type,member)) )
 
-#define container_of(ptr, type, member) (			\
-        const typeof( ((type *)0)->member ) *__mptr = (ptr);	\
-        (type *)( (char *)__mptr - offsetof(type,member) );)
 /*
  * These are non-NULL pointers that will result in page faults
  * under normal circumstances, used to verify that nobody uses
