@@ -1,11 +1,21 @@
 #include <linux/init.h>
 #include <linux/module.h>
 
-MODULE_LICENSE("Dual BSD/GPL");
+#include <linux/moduleparam.h>
+
+int param_var=0;
+
+module_param(param_var,int,S_IRUSR|S_IWUSR);
+
+void display(void)
+{
+  printk(KERN_ALERT "TEST:param_var=%d \n", param_var);
+}
 
 static int hello_init(void)
 {
   printk(KERN_ALERT "TEST: hello world, this is hello world module\n");
+  display();
 
   return 0;
 }
